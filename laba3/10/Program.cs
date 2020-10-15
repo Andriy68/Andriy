@@ -134,7 +134,9 @@ class Program
         }
         Console.WriteLine("Input Size of car");
         M = Convert.ToInt32(Console.ReadLine());
-        php.SizeC(M);
+        php.SizeC
+            
+            (M);
 
         for (int i = 0; i < M; i++)
         {
