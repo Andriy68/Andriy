@@ -1,0 +1,13 @@
+D:\DATA\Desktop\Універ\OOP\laba4\3\bin\Debug\netcoreapp3.1\3.exe
+D:\DATA\Desktop\Універ\OOP\laba4\3\bin\Debug\netcoreapp3.1\3.deps.json
+D:\DATA\Desktop\Універ\OOP\laba4\3\bin\Debug\netcoreapp3.1\3.runtimeconfig.json
+D:\DATA\Desktop\Універ\OOP\laba4\3\bin\Debug\netcoreapp3.1\3.runtimeconfig.dev.json
+D:\DATA\Desktop\Універ\OOP\laba4\3\bin\Debug\netcoreapp3.1\3.dll
+D:\DATA\Desktop\Універ\OOP\laba4\3\bin\Debug\netcoreapp3.1\3.pdb
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.csprojAssemblyReference.cache
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.AssemblyInfoInputs.cache
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.AssemblyInfo.cs
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.csproj.CoreCompileInputs.cache
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.dll
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.pdb
+D:\DATA\Desktop\Універ\OOP\laba4\3\obj\Debug\netcoreapp3.1\3.genruntimeconfig.cache
