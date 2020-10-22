@@ -1,0 +1,13 @@
+D:\DATA\Desktop\Універ\OOP\laba5\2\bin\Debug\netcoreapp3.1\2.exe
+D:\DATA\Desktop\Універ\OOP\laba5\2\bin\Debug\netcoreapp3.1\2.deps.json
+D:\DATA\Desktop\Універ\OOP\laba5\2\bin\Debug\netcoreapp3.1\2.runtimeconfig.json
+D:\DATA\Desktop\Універ\OOP\laba5\2\bin\Debug\netcoreapp3.1\2.runtimeconfig.dev.json
+D:\DATA\Desktop\Універ\OOP\laba5\2\bin\Debug\netcoreapp3.1\2.dll
+D:\DATA\Desktop\Універ\OOP\laba5\2\bin\Debug\netcoreapp3.1\2.pdb
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.csprojAssemblyReference.cache
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.AssemblyInfoInputs.cache
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.AssemblyInfo.cs
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.csproj.CoreCompileInputs.cache
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.dll
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.pdb
+D:\DATA\Desktop\Універ\OOP\laba5\2\obj\Debug\netcoreapp3.1\2.genruntimeconfig.cache
