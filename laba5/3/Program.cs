@@ -1,108 +1,78 @@
-﻿namespace AnimalFarm
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace task_3
 {
-    using System;
-    using AnimalFarm.Models;
-
-    public class Chicken
+    class Chicken
     {
-        private const int MinAge = 0;
-        private const int MaxAge = 15;
-
         private string name;
         private int age;
-
-        public Chicken(string name, int age)
-        {
-            this.Name = name;
-            this.Age = age;
-        }
-
+        public int ProductPerDay { get => CalculateProductPerDay(); }
         public string Name
         {
-            get
+            get { return name; }
+            set
             {
-                return this.name;
-            }
-
-            private set
-            {
-                if (String.IsNullOrEmpty(value) || String.IsNullOrWhiteSpace(value))
+                if (value == null || value == "" || value == " ")
                 {
-                    throw new ArgumentException("Name cannot be empty.");
+                    throw new Exception("Name cannot be empty");
                 }
-
-                this.name = value;
+                else
+                {
+                    name = value;
+                }
             }
         }
-
         public int Age
         {
-            get
+            get { return age; }
+            set
             {
-                return this.age;
-            }
-
-            private set
-            {
-                if (value < MinAge || value > MaxAge)
+                if (value < 0 || value > 15)
                 {
-                    throw new ArgumentException($"Age should be between {MinAge} and {MaxAge}.");
+                    throw new Exception("Age should be between 0 and 15.");
                 }
-                this.age = value;
+                else
+                {
+                    age = value;
+                }
             }
         }
-
-        public double ProductPerDay
+        public Chicken(string n, int a)
         {
-            get
-            {
-                return this.CalculateProductPerDay();
-            }
+            Name = n;
+            Age = a;
         }
-
-        private double CalculateProductPerDay()
+        private int CalculateProductPerDay()
         {
-            switch (this.Age)
-            {
-                case 0:
-                case 1:
-                case 2:
-                case 3:
-                    return 1.5;
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                    return 2;
-                case 8:
-                case 9:
-                case 10:
-                case 11:
-                    return 1;
-                default:
-                    return 0.75;
-            }
+            return 1;
+        }
+        public void Output()
+        {
+            Console.WriteLine($"Chicken {Name} (age {Age}) can produce {ProductPerDay} eggs per day");
         }
     }
 }
 
-
-class Program
+namespace task_3
+{
+    class Program
     {
         static void Main(string[] args)
         {
-            string name = Console.ReadLine();
-            int age = int.Parse(Console.ReadLine());
-
+            string n = Console.ReadLine();
+            int a = int.Parse(Console.ReadLine());
             try
             {
-                Chicken chicken = new Chicken(name, age);
-                Console.WriteLine("Chicken {0} (age {1}) can produce {2} eggs per day.", chicken.Name, chicken.Age, chicken.ProductPerDay);
+                Chicken chicken = new Chicken(n, a);
+                chicken.Output();
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine($"{ex.Message}");
             }
+            Console.ReadKey();
         }
     }
 }
