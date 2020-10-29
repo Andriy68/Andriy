@@ -93,6 +93,24 @@ class prog
         Environment.Exit(0);
     }
 
+    private static int[] Initialize(char[][] matrix)
+    {
+        int[] coordinates = null;
+        for (int i = 0; i < matrix.Length; i++)
+        {
+            string line = Console.ReadLine();
+
+            matrix[i] = line.ToCharArray();
+
+            if (matrix[i].Contains('S'))
+            {
+                coordinates = new int[] { i, Array.IndexOf(matrix[i], 'S') };
+            }
+        }
+
+        return coordinates;
+    }
+
     private static void UpdateE(char[][] matrix)
     {
         for (int i = 0; i < matrix.Length; i++)
@@ -127,21 +145,5 @@ class prog
         }
     }
 
-    private static int[] Initialize(char[][] matrix)
-    {
-        int[] coordinates = null;
-        for (int i = 0; i < matrix.Length; i++)
-        {
-            string line = Console.ReadLine();
-
-            matrix[i] = line.ToCharArray();
-
-            if (matrix[i].Contains('S'))
-            {
-                coordinates = new int[] { i, Array.IndexOf(matrix[i], 'S') };
-            }
-        }
-
-        return coordinates;
-    }
+  
 }

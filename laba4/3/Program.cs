@@ -38,7 +38,7 @@ class Program
     static void Main(string[] args)
     {
         short[] sizes = Console.ReadLine()
-            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Split(' ')
             .Select(short.Parse)
             .ToArray();
 
@@ -83,25 +83,6 @@ class Program
         }
     }
 
-    private static void UpdateCoordinates(string command, IVO ivo, EVIL evil)
-    {
-        var ivoCoordinates = command
-            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-            .Select(int.Parse)
-            .ToArray();
-
-        ivo.UpdateCoordinates(ivoCoordinates[0], ivoCoordinates[1]);
-
-        command = Console.ReadLine();
-
-        var evilCoordinates = command
-            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-            .Select(int.Parse)
-            .ToArray();
-
-        evil.UpdateCoordinates(evilCoordinates[0], evilCoordinates[1]);
-    }
-
     private static int[,] InitializeMatrix(short[] sizes)
     {
         int rowsCount = sizes[0];
@@ -119,4 +100,24 @@ class Program
 
         return matrix;
     }
+    private static void UpdateCoordinates(string command, IVO ivo, EVIL evil)
+    {
+        var ivoCoordinates = command
+            .Split(' ')
+            .Select(int.Parse)
+            .ToArray();
+
+        ivo.UpdateCoordinates(ivoCoordinates[0], ivoCoordinates[1]);
+
+        command = Console.ReadLine();
+
+        var evilCoordinates = command
+            .Split(' ')
+            .Select(int.Parse)
+            .ToArray();
+
+        evil.UpdateCoordinates(evilCoordinates[0], evilCoordinates[1]);
+    }
+
+   
 }

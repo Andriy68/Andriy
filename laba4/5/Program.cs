@@ -175,12 +175,13 @@ public abstract class Item
 }
 
 
+
 class Program
 {
     static void Main(string[] args)
     {
         long capacity = long.Parse(Console.ReadLine());
-        var input = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        var input = Console.ReadLine().Split(' ');
         var bag = new bag(capacity);
 
         for (int i = 0; i < input.Length; i += 2)

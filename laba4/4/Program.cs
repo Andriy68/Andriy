@@ -111,41 +111,14 @@ class Program
 
         while ((command = Console.ReadLine()) != "Output")
         {
-            var commandArgs = command.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var commandArgs = command.Split(' ');
             ParseCommand(commandArgs);
         }
 
         while ((command = Console.ReadLine()) != "End")
         {
-            var commandArgs = command.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var commandArgs = command.Split(' ');
             PrintOutput(commandArgs);
-        }
-    }
-
-    private static void PrintOutput(string[] commandArgs)
-    {
-        if (commandArgs.Length == 1)
-        {
-            string departmentName = commandArgs[0];
-
-            Console.WriteLine(departments.Single(d => d.Name == departmentName).GetAllPatients());
-        }
-        else if (commandArgs.Length == 2)
-        {
-            if (commandArgs[1].All(Char.IsDigit))
-            {
-                string departmentName = commandArgs[0];
-                int roomNumber = int.Parse(commandArgs[1]);
-
-                Console.WriteLine(departments.Single(d => d.Name == departmentName).GetPatientsByRoom(roomNumber));
-            }
-            else
-            {
-                string doctorFirstName = commandArgs[0];
-                string doctorLastName = commandArgs[1];
-
-                Console.WriteLine(doctors.Single(d => d.FirstName == doctorFirstName && d.LastName == doctorLastName).GetPatients());
-            }
         }
     }
 
@@ -175,4 +148,32 @@ class Program
 
         doctor.AddPatient(patient);
     }
+    private static void PrintOutput(string[] commandArgs)
+    {
+        if (commandArgs.Length == 1)
+        {
+            string departmentName = commandArgs[0];
+
+            Console.WriteLine(departments.Single(d => d.Name == departmentName).GetAllPatients());
+        }
+        else if (commandArgs.Length == 2)
+        {
+            if (commandArgs[1].All(Char.IsDigit))
+            {
+                string departmentName = commandArgs[0];
+                int roomNumber = int.Parse(commandArgs[1]);
+
+                Console.WriteLine(departments.Single(d => d.Name == departmentName).GetPatientsByRoom(roomNumber));
+            }
+            else
+            {
+                string doctorFirstName = commandArgs[0];
+                string doctorLastName = commandArgs[1];
+
+                Console.WriteLine(doctors.Single(d => d.FirstName == doctorFirstName && d.LastName == doctorLastName).GetPatients());
+            }
+        }
+    }
+
+   
 }

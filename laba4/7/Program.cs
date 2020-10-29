@@ -126,7 +126,7 @@ class Program
 
         while ((command = Console.ReadLine()) != "End")
         {
-            var tokens = command.Split(new[] { ' ', '-' }, StringSplitOptions.RemoveEmptyEntries);
+            var tokens = command.Split(new[] { ' ', '-' });
 
             if (tokens.Length == 2)
             {

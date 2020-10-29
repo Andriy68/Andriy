@@ -109,7 +109,7 @@ class Program
 
         for (int i = 0; i < count; i++)
         {
-            var tokens = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var tokens = Console.ReadLine().Split(' ');
             string model = tokens[0];
             int power = int.Parse(tokens[1]);
 
@@ -143,7 +143,7 @@ class Program
 
         for (int i = 0; i < count; i++)
         {
-            var tokens = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var tokens = Console.ReadLine().Split(' ');
 
             string model = tokens[0];
             ENGINE engine = engines.First(e => e.Model == tokens[1]);
