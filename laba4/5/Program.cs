@@ -25,7 +25,7 @@ public class bag
 
     public long CashItemsValue
     {
-        get
+        get  
         {
             return bag1.Where(i => i is cash).Sum(i => i.Value);
         }
