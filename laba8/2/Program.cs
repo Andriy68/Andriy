@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace _2
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Animal cat = new Cat("Pesho", "Whiskas");
+        Animal dog = new Dog("Gosho", "Meat");
+
+        Console.WriteLine(cat.ExplainSelf());
+        Console.WriteLine(dog.ExplainSelf());
+
     }
 }

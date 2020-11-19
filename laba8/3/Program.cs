@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _3
+namespace _03._Shapes
 {
     class Program
     {
